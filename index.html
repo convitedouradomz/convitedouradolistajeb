@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Presentes | Julieta & Bruno · 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Cormorant Garamond", serif;
+        background: #faf7f2;
+        color: #1a1a1a;
+        min-height: 100vh;
+        padding: 20px;
+        background-image:
+          radial-gradient(
+            circle at 10% 20%,
+            rgba(201, 160, 61, 0.04) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 90% 80%,
+            rgba(201, 160, 61, 0.04) 0%,
+            transparent 50%
+          );
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      /* ========== DECO TOPO ========== */
+      .deco-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+
+      .deco-top .line {
+        width: 50px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #c9a03d, transparent);
+      }
+
+      .deco-top .star {
+        color: #c9a03d;
+        font-size: 0.8rem;
+        opacity: 0.6;
+      }
+
+      /* ========== HEADER ========== */
+      .header-lista {
+        text-align: center;
+        padding: 30px 20px 25px;
+        position: relative;
+      }
+
+      .foto-casal-header {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #c9a03d;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        transition: transform 0.3s;
+      }
+
+      .foto-casal-header:hover {
+        transform: scale(1.05);
+      }
+
+      .header-lista .logo {
+        display: block;
+        width: 90px !important;
+        height: auto !important;
+        max-width: 90px !important;
+        margin: 0 auto 14px !important;
+        transition: transform 0.3s ease !important;
+        object-fit: contain !important;
+      }
+      .header-lista .logo:hover {
+        transform: scale(1.05);
+      }
+
+      .header-lista .titulo-principal {
+        font-family: "Great Vibes", cursive;
+        font-size: 2.8rem;
+        color: #1a1a1a;
+        letter-spacing: 3px;
+        margin-bottom: 5px;
+      }
+
+      .header-lista .titulo-principal span {
+        color: #c9a03d;
+      }
+
+      .header-lista .casal {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #1a1a1a;
+        letter-spacing: 2px;
+      }
+
+      .header-lista .casal .amp {
+        color: #c9a03d;
+        margin: 0 8px;
+      }
+
+      .header-lista .subtitulo {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.2rem;
+        color: #888;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        font-style: italic;
+      }
+
+      .divider-gold {
+        width: 80px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #c9a03d, transparent);
+        margin: 15px auto;
+      }
+
+      /* ========== MENSAGEM DE ABERTURA ========== */
+      .mensagem-abertura {
+        text-align: center;
+        max-width: 650px;
+        margin: 0 auto 30px;
+        padding: 20px 25px;
+        background: #fff;
+        border-radius: 16px;
+        border-left: 4px solid #c9a03d;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+      }
+
+      .mensagem-abertura p {
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        color: #555;
+        font-style: italic;
+        line-height: 1.7;
+      }
+
+      .mensagem-abertura i {
+        color: #c9a03d;
+      }
+
+      /* ========== LISTA DE PRESENTES ========== */
+      .lista-presentes {
+        background: #fff;
+        border-radius: 24px;
+        padding: 35px 30px;
+        margin-bottom: 35px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(201, 160, 61, 0.12);
+        transition: box-shadow 0.3s;
+      }
+
+      .lista-presentes:hover {
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+      }
+
+      .lista-presentes .titulo-secao {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      .lista-presentes .titulo-secao i {
+        color: #c9a03d;
+        margin-right: 10px;
+      }
+
+      .lista-presentes .sub-secao {
+        text-align: center;
+        color: #888;
+        font-size: 1rem;
+        font-style: italic;
+        margin-bottom: 25px;
+      }
+
+      .grid-presentes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      @media (max-width: 768px) {
+        .grid-presentes {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .item-presente {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 18px;
+        background: #faf8f6;
+        border-radius: 12px;
+        border: 1px solid #eee;
+        transition: all 0.3s ease;
+      }
+
+      .item-presente:hover {
+        border-color: #c9a03d;
+        background: #fff;
+        box-shadow: 0 3px 12px rgba(201, 160, 61, 0.08);
+      }
+
+      .item-presente .numero {
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #c9a03d;
+        min-width: 28px;
+      }
+
+      .item-presente .nome {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.1rem;
+        color: #1a1a1a;
+        font-weight: 500;
+        flex: 1;
+      }
+
+      .btn-escolher-presente {
+        margin-left: auto;
+        background: linear-gradient(135deg, #c9a03d, #dbb95c);
+        color: #fff;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        white-space: nowrap;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 10px rgba(201, 160, 61, 0.2);
+      }
+
+      .btn-escolher-presente:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(201, 160, 61, 0.3);
+      }
+
+      .btn-escolher-presente:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+
+      .item-presente.escolhido {
+        background: #f1efe9;
+        border-color: #ddd;
+        opacity: 0.75;
+      }
+
+      .item-presente.escolhido .nome {
+        text-decoration: line-through;
+        color: #999;
+      }
+
+      .item-presente.escolhido .btn-escolher-presente {
+        background: #b9b9b9;
+        cursor: not-allowed;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .item-presente.escolhido .btn-escolher-presente:hover {
+        transform: none;
+        box-shadow: none;
+      }
+
+      .tag-escolhido {
+        flex-basis: 100%;
+        font-size: 0.8rem;
+        color: #c9a03d;
+        font-style: italic;
+        margin-top: 2px;
+      }
+
+      /* ========== PRESENTES MONETÁRIOS ========== */
+      .presentes-monetarios {
+        background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+        border-radius: 24px;
+        padding: 35px 30px;
+        margin-bottom: 35px;
+        border: 1px solid rgba(201, 160, 61, 0.2);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .presentes-monetarios .titulo-secao {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      .presentes-monetarios .titulo-secao i {
+        color: #c9a03d;
+        margin-right: 10px;
+      }
+
+      .presentes-monetarios .sub-secao {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1rem;
+        font-style: italic;
+        margin-bottom: 25px;
+      }
+
+      .grid-monetario {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+      @media (max-width: 768px) {
+        .grid-monetario {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .card-monetario {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 18px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: all 0.3s ease;
+        backdrop-filter: blur(4px);
+      }
+
+      .card-monetario:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(201, 160, 61, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .card-monetario .tipo {
+        font-family: "Inter", sans-serif;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #c9a03d;
+        font-weight: 600;
+        margin-bottom: 6px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .card-monetario .tipo i {
+        font-size: 0.9rem;
+      }
+
+      .card-monetario .numero-conta {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .card-monetario .titular {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.6);
+        font-style: italic;
+      }
+
+      .card-monetario .titular strong {
+        color: rgba(255, 255, 255, 0.8);
+        font-style: normal;
+      }
+
+      .card-monetario .copiar {
+        background: rgba(255, 255, 255, 0.08);
+        border: none;
+        color: #c9a03d;
+        padding: 4px 12px;
+        border-radius: 30px;
+        font-size: 0.7rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Inter", sans-serif;
+        margin-top: 6px;
+      }
+
+      .card-monetario .copiar:hover {
+        background: rgba(201, 160, 61, 0.2);
+        transform: scale(1.05);
+      }
+
+      /* ========== INSTAGRAM ========== */
+      .instagram-area {
+        text-align: center;
+        margin: 30px 0 20px;
+        padding: 20px;
+      }
+
+      .instagram-area a {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-family: "Inter", sans-serif;
+        font-size: 1.1rem;
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 30px;
+        border: 2px solid #c9a03d;
+        border-radius: 60px;
+        transition: all 0.4s ease;
+        background: #fff;
+        box-shadow: 0 4px 15px rgba(201, 160, 61, 0.08);
+      }
+
+      .instagram-area a:hover {
+        background: #c9a03d;
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(201, 160, 61, 0.25);
+      }
+
+      .instagram-area a i {
+        font-size: 1.4rem;
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* ========== RODAPÉ ========== */
+      .footer-lista {
+        text-align: center;
+        padding: 30px 20px 20px;
+        border-top: 1px solid rgba(201, 160, 61, 0.12);
+        margin-top: 20px;
+      }
+
+      .footer-lista .deco-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+
+      .footer-lista .deco-bottom .line {
+        width: 50px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #c9a03d, transparent);
+      }
+
+      .footer-lista .deco-bottom .star {
+        color: #c9a03d;
+        font-size: 0.7rem;
+        opacity: 0.5;
+      }
+
+      .footer-lista .frase-final {
+        font-family: "Great Vibes", cursive;
+        font-size: 1.6rem;
+        color: #c9a03d;
+        margin-bottom: 10px;
+      }
+
+      .footer-lista .creditos {
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+
+      .footer-lista .creditos span {
+        color: #c9a03d;
+      }
+
+      /* ========== RESPONSIVO ========== */
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        .header-lista .titulo-principal {
+          font-size: 2.2rem;
+        }
+
+        .header-lista .casal {
+          font-size: 1.4rem;
+        }
+
+        .foto-casal-header {
+          width: 100px;
+          height: 100px;
+        }
+
+        .lista-presentes {
+          padding: 25px 18px;
+        }
+
+        .presentes-monetarios {
+          padding: 25px 18px;
+        }
+
+        .grid-monetario {
+          grid-template-columns: 1fr;
+        }
+
+        .card-monetario .numero-conta {
+          font-size: 1rem;
+        }
+
+        .instagram-area a {
+          font-size: 0.95rem;
+          padding: 10px 22px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header-lista .titulo-principal {
+          font-size: 1.8rem;
+        }
+
+        .foto-casal-header {
+          width: 80px;
+          height: 80px;
+        }
+
+        .item-presente {
+          padding: 10px 14px;
+        }
+
+        .item-presente .nome {
+          font-size: 1rem;
+        }
+
+        .card-monetario {
+          padding: 14px 16px;
+        }
+      }
+      .titulo-categoria-lista {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 30px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #c9a03d;
+}
+
+.titulo-categoria-lista:first-child {
+  margin-top: 0;
+}
+
+.titulo-categoria-lista img {
+  width: 28px;
+  height: auto;
+}
+
+.titulo-categoria-lista i {
+  font-size: 1.2rem;
+  color: #c9a03d;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ========== DECO TOPO ========== -->
+      <div class="deco-top">
+        <span class="line"></span>
+        <span class="star">✦</span>
+        <span class="line"></span>
+        <span class="star">✦</span>
+        <span class="line"></span>
+        <span class="star">✦</span>
+        <span class="line"></span>
+      </div>
+
+      <!-- ========== HEADER ========== -->
+      <div class="header-lista">
+        <img src="logoCD.jpg" alt="Convites Dourados MZ" class="logo" />
+
+        <h1 class="titulo-principal">✦ <span>Lista</span> de Presentes ✦</h1>
+        <p class="casal">Julieta <span class="amp">✦</span> Bruno</p>
+        <p class="subtitulo">✨ O nosso amor merece ser celebrado ✨</p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <!-- ========== MENSAGEM DE ABERTURA ========== -->
+      <div class="mensagem-abertura">
+        <p>
+          <i class="fas fa-quote-left"></i>
+          A vossa presença é o nosso maior presente! Mas se desejarem
+          presentear-nos com algo material, aqui fica a nossa lista de
+          sugestões.
+          <i class="fas fa-quote-right"></i>
+        </p>
+      </div>
+
+      <!-- ========== LISTA DE PRESENTES ========== -->
+      <div class="lista-presentes">
+        <h2 class="titulo-secao">
+          <i class="fas fa-gift"></i> Presentes Materiais
+        </h2>
+        <p class="sub-secao">
+          ❤️ Escolhe um presente e marca-o como escolhido ❤️
+        </p>
+<div class="titulo-categoria-lista">
+  <img src="Electr.png" alt="Eletrodomésticos" /> Eletrodomésticos
+</div>
+<div class="grid-presentes">
+  <div class="item-presente" data-id="microondas">
+    <span class="nome">Micro-ondas</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="maquina-lavar">
+    <span class="nome">Máquina de lavar</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="ar-condicionado">
+    <span class="nome">Ar-condicionado</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="tv-smart">
+    <span class="nome">TV Smart</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+</div>
+
+<div class="titulo-categoria-lista">
+  <i class="fas fa-plug"></i> Eletroportáteis
+</div>
+<div class="grid-presentes">
+  <div class="item-presente" data-id="liquidificador">
+    <span class="nome">Liquidificador</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="batedeira">
+    <span class="nome">Batedeira</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="maquina-cafe">
+    <span class="nome">Máquina de café</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="sanduicheira">
+    <span class="nome">Sanduicheira (tostadeira)</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="air-fryer">
+    <span class="nome">Fritadeira sem óleo (Air Fryer)</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+</div>
+
+<div class="titulo-categoria-lista">
+  <img src="cocina.png" alt="Cozinha" /> Cozinha
+</div>
+<div class="grid-presentes">
+  <div class="item-presente" data-id="panelas-ceramicas">
+    <span class="nome">Panelas cerâmicas ou antiaderentes</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="talheres-pratos-copos">
+    <span class="nome">Conjunto de Talheres, Pratos e Copos</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+</div>
+
+<div class="titulo-categoria-lista">
+  <i class="fas fa-bed"></i> Quarto
+</div>
+<div class="grid-presentes">
+  <div class="item-presente" data-id="toalhas-roupoes">
+    <span class="nome">Toalhas de banho, toalhas de mesa e roupões de banho</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+</div>
+
+<div class="titulo-categoria-lista">
+  <img src="mobilia.png" alt="Sala" /> Sala
+</div>
+<div class="grid-presentes">
+  <div class="item-presente" data-id="luminarias">
+    <span class="nome">Luminárias (Candeeiros)</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="panela-pressao">
+    <span class="nome">Panela de pressão</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="cortinas">
+    <span class="nome">Cortinas</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="espelho-decorativo">
+    <span class="nome">Espelho decorativo</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="travessas-pirex">
+    <span class="nome">Travessas ou pirex para servir</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="grelhador-eletrico">
+    <span class="nome">Grelhador elétrico</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="termoacumulador">
+    <span class="nome">Termoacumulador</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="fritadeira-eletrica">
+    <span class="nome">Fritadeira elétrica</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+  <div class="item-presente" data-id="malas-viagem">
+    <span class="nome">Jogo de malas de viagem</span>
+    <button class="btn-escolher-presente">🎁 Escolher</button>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <!-- ========== PRESENTES MONETÁRIOS ========== -->
+      <div class="presentes-monetarios">
+        <h2 class="titulo-secao">
+          <i class="fas fa-hand-holding-heart"></i> Presentes Monetários
+        </h2>
+        <p class="sub-secao">
+          💛 Qualquer contribuição é bem-vinda com muito amor 💛
+        </p>
+
+        <div class="grid-monetario">
+          <div class="card-monetario">
+            <div class="tipo"><i class="fas fa-university"></i> BCI</div>
+            <span class="numero-conta">395936541</span>
+            <span class="titular"
+              ><strong>Titular:</strong> Julieta Edilsa Manuel Chiungo</span
+            >
+            <button class="copiar" onclick="copiarTexto('395936541')">
+              <i class="fas fa-copy"></i> Copiar
+            </button>
+          </div>
+
+          <div class="card-monetario">
+            <div class="tipo"><i class="fas fa-university"></i> BCI</div>
+            <span class="numero-conta">373951394</span>
+            <span class="titular"><strong>Titular:</strong> Bruno Mário</span>
+            <button class="copiar" onclick="copiarTexto('373951394')">
+              <i class="fas fa-copy"></i> Copiar
+            </button>
+          </div>
+
+          <div class="card-monetario">
+            <div class="tipo"><i class="fas fa-mobile-alt"></i> M-Pesa</div>
+            <span class="numero-conta">845874866</span>
+            <span class="titular"
+              ><strong>Titular:</strong> Julieta Edilsa Manuel Chiungo</span
+            >
+            <button class="copiar" onclick="copiarTexto('845874866')">
+              <i class="fas fa-copy"></i> Copiar
+            </button>
+          </div>
+
+          <div class="card-monetario">
+            <div class="tipo"><i class="fas fa-wallet"></i> E-Mola</div>
+            <span class="numero-conta">874747492</span>
+            <span class="titular"
+              ><strong>Titular:</strong> Bruno Muhopiha Mário</span
+            >
+            <button class="copiar" onclick="copiarTexto('874747492')">
+              <i class="fas fa-copy"></i> Copiar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== INSTAGRAM ========== -->
+      <div class="instagram-area">
+        <a href="https://instagram.com/convitedouradomz" target="_blank">
+          <i class="fab fa-instagram"></i> @convitedouradomz
+        </a>
+      </div>
+
+      <!-- ========== RODAPÉ ========== -->
+      <div class="footer-lista">
+        <div class="deco-bottom">
+          <span class="line"></span>
+          <span class="star">✦</span>
+          <span class="line"></span>
+          <span class="star">✦</span>
+          <span class="line"></span>
+          <span class="star">✦</span>
+          <span class="line"></span>
+        </div>
+
+        <p class="frase-final">Com todo o nosso carinho</p>
+        <p class="creditos">
+          © 2026 · <span>Julieta & Bruno</span> · Convites Dourados MZ
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // ========== FUNÇÃO COPIAR (números das contas) ==========
+      function copiarTexto(texto) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard
+            .writeText(texto)
+            .then(() => mostrarFeedback("✅ Número copiado!"))
+            .catch(() => copiarFallback(texto));
+        } else {
+          copiarFallback(texto);
+        }
+      }
+
+      function copiarFallback(texto) {
+        const input = document.createElement("input");
+        input.value = texto;
+        document.body.appendChild(input);
+        input.select();
+        try {
+          document.execCommand("copy");
+          mostrarFeedback("✅ Número copiado!");
+        } catch (err) {
+          alert("❌ Não foi possível copiar. Copia manualmente: " + texto);
+        }
+        document.body.removeChild(input);
+      }
+
+      function mostrarFeedback(mensagem) {
+        const toast = document.createElement("div");
+        toast.textContent = mensagem;
+        toast.style.cssText = `
+          position: fixed;
+          bottom: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #1a1a1a;
+          color: #fff;
+          padding: 14px 30px;
+          border-radius: 50px;
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 1.1rem;
+          z-index: 9999;
+          box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+          border: 1px solid #c9a03d;
+          opacity: 0;
+          transition: opacity 0.4s ease;
+        `;
+        document.body.appendChild(toast);
+        setTimeout(() => (toast.style.opacity = "1"), 50);
+        setTimeout(() => {
+          toast.style.opacity = "0";
+          setTimeout(() => toast.remove(), 400);
+        }, 2500);
+      }
+    </script>
+
+    <!-- ========== FIREBASE: Lista de presentes em tempo real ========== -->
+   <!-- ========== FIREBASE: Lista de presentes em tempo real (Firestore) ========== -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import {
+    getFirestore,
+    doc,
+    runTransaction,
+    onSnapshot,
+    collection,
+  } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  // Mesma configuração do convite (mesmo projeto Firebase)
+  const firebaseConfig = {
+    apiKey: "AIzaSyAsXcP98tL4l8REoZdGJtgC2w0oAMDxRcs",
+    authDomain: "casamentodoedmilsonefarida.firebaseapp.com",
+    projectId: "casamentodoedmilsonefarida",
+    storageBucket: "casamentodoedmilsonefarida.firebasestorage.app",
+    messagingSenderId: "113127738183",
+    appId: "1:113127738183:web:acf1f999d2f36e031a9a62",
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const presentesRef = collection(db, "presentesJulieta");
+
+  // ========== MAPA de IDs para nomes dos presentes ==========
+ const nomesPresentes = {
+  "microondas": "Micro-ondas",
+  "maquina-lavar": "Máquina de lavar",
+  "ar-condicionado": "Ar-condicionado",
+  "tv-smart": "TV Smart",
+  "liquidificador": "Liquidificador",
+  "batedeira": "Batedeira",
+  "maquina-cafe": "Máquina de café",
+  "sanduicheira": "Sanduicheira (tostadeira)",
+  "air-fryer": "Fritadeira sem óleo (Air Fryer)",
+  "panelas-ceramicas": "Panelas cerâmicas ou antiaderentes",
+  "talheres-pratos-copos": "Conjunto de Talheres, Pratos e Copos",
+  "toalhas-roupoes": "Toalhas de banho, toalhas de mesa e roupões de banho",
+  "luminarias": "Luminárias (Candeeiros)",
+  "panela-pressao": "Panela de pressão",
+  "cortinas": "Cortinas",
+  "espelho-decorativo": "Espelho decorativo",
+  "travessas-pirex": "Travessas ou pirex para servir",
+  "grelhador-eletrico": "Grelhador elétrico",
+  "termoacumulador": "Termoacumulador",
+  "fritadeira-eletrica": "Fritadeira elétrica",
+  "malas-viagem": "Jogo de malas de viagem",
+};
+  function atualizarItem(item, info) {
+    const botao = item.querySelector(".btn-escolher-presente");
+    let tag = item.querySelector(".tag-escolhido");
+
+    if (info && info.escolhido) {
+      item.classList.add("escolhido");
+      if (botao) {
+        botao.innerHTML = '<i class="fas fa-check-circle"></i> Escolhido';
+        botao.disabled = true;
+      }
+      if (!tag) {
+        tag = document.createElement("span");
+        tag.className = "tag-escolhido";
+        item.appendChild(tag);
+      }
+      tag.textContent = `Escolhido por ${info.quem}`;
+    } else {
+      item.classList.remove("escolhido");
+      if (botao) {
+        botao.innerHTML = "🎁 Escolher";
+        botao.disabled = false;
+      }
+      if (tag) tag.remove();
+    }
+  }
+
+  // ========== OUVIR MUDANÇAS EM TEMPO REAL (Firestore) ==========
+  onSnapshot(
+    presentesRef,
+    (snapshot) => {
+      const dados = {};
+      snapshot.forEach((docSnap) => {
+        dados[docSnap.id] = docSnap.data();
+      });
+
+      document.querySelectorAll(".item-presente").forEach((item) => {
+        const id = item.dataset.id;
+        atualizarItem(item, dados[id]);
+      });
+    },
+    (error) => {
+      console.error("❌ Erro ao ler Firestore:", error);
+    },
+  );
+
+  // ========== FUNÇÃO PARA ESCOLHER UM PRESENTE ==========
+  window.escolherPresente = function (item) {
+    const id = item.dataset.id;
+    const nome =
+      nomesPresentes[id] || item.querySelector(".nome").textContent;
+
+    if (item.classList.contains("escolhido")) {
+      alert(
+        `O presente "${nome}" já foi escolhido por outro convidado. 💛\nQue tal escolheres outro?`,
+      );
+      return;
+    }
+
+    const quem = prompt(
+      `O teu nome, por favor, para reservares "${nome}":`,
+    );
+    if (!quem || !quem.trim()) return;
+
+    const presenteDocRef = doc(db, "presentesJulieta", id);
+
+    runTransaction(db, async (transaction) => {
+      const docSnap = await transaction.get(presenteDocRef);
+      if (docSnap.exists() && docSnap.data().escolhido) {
+        throw new Error("JA_ESCOLHIDO");
+      }
+      transaction.set(presenteDocRef, {
+        escolhido: true,
+        quem: quem.trim(),
+        timestamp: Date.now(),
+      });
+    })
+      .then(() => {
+        mostrarFeedback(`🎁 Reservaste "${nome}". Obrigado, ${quem.trim()}!`);
+      })
+      .catch((erro) => {
+        if (erro.message === "JA_ESCOLHIDO") {
+          alert(
+            `Ups! Alguém acabou de reservar "${nome}" mesmo agora. 💛\nEscolhe outro presente da lista.`,
+          );
+        } else {
+          console.error(erro);
+          alert("Não foi possível reservar o presente. Tenta novamente.");
+        }
+      });
+  };
+
+  // ========== ASSOCIAR CLICK AOS BOTÕES ==========
+  document
+    .querySelectorAll(".item-presente .btn-escolher-presente")
+    .forEach((btn) => {
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        const item = this.closest(".item-presente");
+        window.escolherPresente(item);
+      });
+    });
+</script>
+  </body>
+</html>
